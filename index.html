@@ -63,7 +63,9 @@
       var phone = document.getElementById("phone").value;
       var customUrl = "www.facebook.com";
 
-      var url = "https://wa.me/"+phone+"?text="+customUrl;
+      var url = "https://wa.me/" + phone + "?text=" + customUrl;
+
+      console.log(`MY ENTERED URL ${url}`);
 
       window.open(url).focus();
       if (url) {
@@ -94,6 +96,7 @@
                   <input type="submit" name="submit" class="btnSubmit btn-block" onclick="gotowhatsapp()"
                     value="Submit" />
                 </div>
+                <a href="window.open('whatsapp://send?text=This is WhatsApp sharing example using button')">SHARE</a>
               </form>
             </div>
           </div>
